@@ -10,6 +10,8 @@ A full-stack virtual interview simulation system built with React, featuring rea
 - 🤖 AI-powered question generation and analysis
 - 📊 Comprehensive performance feedback
 - 🎨 Modern, accessible UI with design system
+- ⏭️ Skip question functionality
+- 🛑 Stop interview and view results anytime
 
 ## Prerequisites
 
@@ -50,7 +52,9 @@ src/
 │   ├── VideoInterview.jsx
 │   ├── VideoInterview.css
 │   ├── AIQuestionPanel.jsx
-│   └── AIQuestionPanel.css
+│   ├── AIQuestionPanel.css
+│   ├── Chatbot.jsx
+│   └── Chatbot.css
 ├── pages/
 │   ├── CompanySelection.jsx
 │   ├── CompanySelection.css
@@ -75,7 +79,9 @@ src/
 2. **Start Interview**: Click "Start Interview" to begin
 3. **Allow Permissions**: Grant camera and microphone access when prompted
 4. **Answer Questions**: Speak your answers clearly
-5. **View Results**: After completing all questions, review your performance
+   - Use "Skip Question" button to move to the next question
+   - Use "Stop Interview" button to end the interview and view results
+5. **View Results**: After completing all questions or stopping, review your performance
 
 ## Technical Details
 
@@ -91,8 +97,8 @@ src/
 - Speak clearly and at a moderate pace
 - Answers are automatically saved when you finish speaking
 - The system detects natural pauses to move to the next question
+- You can skip questions or stop the interview at any time
 
 ## License
 
 This project is for educational purposes.
-
